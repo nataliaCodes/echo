@@ -4,9 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const db = require('./db');
 const dbHelpers = require('./helpers/dbHelpers')(db);
-// const cors = require('cors');
 
-// const homeRouter = require('./routes/home');
 const usersRouter = require('./routes/users');
 const videosRouter = require('./routes/videos');
 const categoriesRouter = require('./routes/categories');
@@ -31,10 +29,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'build')));
-// app.use(cors);
 
-// app.use('/', homeRouter());
-app.use('/api/users', usersRouter(dbHelpers)); //remove when ready for deploy
+// app.use('/api/users', usersRouter(dbHelpers));
 app.use('/api/videos', videosRouter(dbHelpers));
 app.use('/api/categories', categoriesRouter(dbHelpers));
 app.use('/register', registerRouter(dbHelpers));
