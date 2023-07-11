@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'build')));
 
-// app.use('/api/users', usersRouter(dbHelpers));
+app.use('/api/users', usersRouter(dbHelpers));
 app.use('/api/videos', videosRouter(dbHelpers));
 app.use('/api/categories', categoriesRouter(dbHelpers));
 app.use('/register', registerRouter(dbHelpers));
