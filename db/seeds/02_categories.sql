@@ -12,4 +12,7 @@ VALUES
   ('Art', 5),
   ('Cooking', 6),
   ('DIY', 6),
-  ('Education', 6)
+  ('Education', 6),
+  ('Art', 7),
+  ('Cooking', 7),
+  ('Dance', 7)

@@ -37,8 +37,7 @@ module.exports = ({
 
     /* Delete video */ 
     videos.delete('/', (req, res) => {
-      // const id = req.body;
-      const id = req.query[0]
+      const id = req.query.id;
   
       deleteVideo(id)
         .then(() => res.json(`back-end says: video ${id} deleted`))
