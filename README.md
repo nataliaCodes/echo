@@ -6,7 +6,7 @@ Our app is powered by the Youtube search API​. We built our client side using 
 Our server runs on Node.js' Express framework​ and we used PostgreSQL to create and interface with our database​.
 
 #### To run in development setting
-The app has a [Node.js front-end](https://github.com/nataliaCodes/echo-front-end) that supplies the static files in the build folder. (`npm run build` will supply new static files if any modifications are made on the front-end).</br>
+The app has a [React front-end](https://github.com/nataliaCodes/echo-front-end) that supplies the static files in the build folder. (`npm run build` will supply new static files if any modifications are made on the front-end).</br>
 Before running the app populate database with `npm run db:reset`.</br>
 For this to work you need to have postgresql set up on your machine and have a database and user ready. In the root folder set up your .env file containing the following variables: DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT. These variables will be required when connecting to the database.</br>
 To start the local app run `npm run dev`. It will run on port 3001.
